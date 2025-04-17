@@ -1,0 +1,114 @@
+---
+title: Linkly AI
+description: "本地 AI 第二大脑，从你的文件即时回答。"
+---
+
+<img
+  className="block dark:hidden"
+  src="/images/hero-light-zh.png"
+  alt="亮色主题"
+/>
+<img
+  className="hidden dark:block"
+  src="/images/hero-dark-zh.png"
+  alt="暗色主题"
+/>
+
+## 这是什么？
+
+Linkly AI 是一个 AI 知识库，是运行在本地的桌面客户端。
+
+借助 Linkly AI，您可以：
+
+- 与存储在个人电脑上的文档进行 AI 对话，没有任何限制
+- 使用任意提供商的 LLM 服务，或者用 [Ollama](https://ollama.com/) 等本地部署的模型服务。
+- 也可以使用一段模糊的描述，找到知识库中的文档
+- 使用 DeepResearch 工具对大量文档进行研究，并撰写报告
+- 也可以仅仅把它当做另一个 AI 聊天机器人，且更加美观
+
+总之，这是一个完全属于你的、免费的、开源的、优雅的，真正可用的人工智能第二大脑。
+
+<Tip>
+  Linkly AI的产品灵感，来自于 [ChatGPT](https://www.anthropic.com/news/projects)
+  和
+  [Claude](https://support.anthropic.com/zh-CN/articles/9517075-%E4%BB%80%E4%B9%88%E6%98%AF%E9%A1%B9%E7%9B%AE)
+  中非常棒的一个轻量级知识库应用：Project。
+  如果你使用过这类产品，你将会非常熟悉。
+</Tip>
+
+## 为谁打造？
+
+Linkly AI 是为所有受困于知识管理的**知识工作者**、**学生**、**研究人员**、**技术人员**，以及**小型团队**打造的。
+
+你是否曾经遇到过以下难题？
+
+<CardGroup cols={2}>
+  <Card title="信息碎片泛滥" icon="file-lines" iconType="duotone">
+    PDF、DOCX、网页、笔记等各种文档四散分布，想找却无从下手，阅读负担日益严重
+  </Card>
+  <Card title="知识整理费时费力" icon="folder-tree" iconType="duotone">
+    手动分类、打标签、创建文件夹，时间投入远超产出
+  </Card>
+  <Card title="搜索效率低下" icon="magnifying-glass" iconType="duotone">
+    寻找文档只能凭记忆从文件名寻找，想要的内容却藏在某个角落的文件中，而且只记得大意
+  </Card>
+  <Card title="知识利用难，成了知识仓鼠" icon="box-archive" iconType="duotone">
+    费劲收集整理的内容，却无法整合、应用，形成了大量的"知识库存"。
+  </Card>
+</CardGroup>
+
+这些问题其实从来没有被高效的解决，直到 AI 的出现。
+
+**AI 搜索**很好的解决了知识收集和快速浏览的难题，人们本期望**AI 知识库**能解决知识的整理和使用难题，然而当你使用过市面上的大多 AI 知识库产品，会发现存在以下问题：
+
+<AccordionGroup>
+  <Accordion title="回答不准确，幻觉严重">
+    大部分 AI 知识库仅使用简单 RAG 来搜索文档片段，受限于技术、成本、性能、模型选择等，效果欠佳。
+  </Accordion>
+  <Accordion title="模型选择受限">
+    受限于成本，大厂的竞争因素，很多时候我们并不能使用最好的模型来进行问答，效果大打折扣。
+  </Accordion>
+  <Accordion title="数据隐私，令人堪忧">
+    大部分的 AI 知识库运行在云端，我们的数据不得不上传到他们的服务器上，一旦出现安全问题，或者应用提供商监守自盗，我们的隐私数据将被泄露。
+
+    甚至出现某些大厂明目张胆的使用用户的数据训练模型。
+
+  </Accordion>
+  <Accordion title="容量受限，成本高昂">
+    AI 应用的运行成本非常高，不得不转嫁给用户，或者降低质量。大部分 AI 知识库只能提供几个 G 的免费容量。
+    
+    很多用户有自己的算力（比如自己的显卡）却无法使用，也很难自由的选择模型提供商。
+  </Accordion>
+</AccordionGroup>
+
+## 核心优势
+
+Linkly AI 的开发团队，采用领先的理念和技术架构，立志于打造一个最好的、面向未来的 AI 知识库应用。
+
+<CardGroup cols={1}>
+  <Card title="本地优先" icon="laptop" horizontal="horizontal" iconType="duotone">
+    Linkly AI 是一个客户端，完全在用户个人电脑上运行，所有数据存储在本地。如果用户有能力自己部署模型，甚至可实现完全离线运行。
+  </Card>
+  <Card title="数据安全" icon="shield-check" horizontal="horizontal" iconType="duotone">
+    得益于本地运行和开源策略，Linkly AI 拥有绝对的数据安全。
+  </Card>
+  <Card title="最准确" icon="bullseye" horizontal="horizontal" iconType="duotone">
+    Linkly AI 专注在知识库领域，使用最先进的 RAG、Agentic、GraphRAG、记忆等技术实现。因为无需考虑模型的推理成本，可以使用最佳的技术组合来保证最好的问答效果。
+  </Card>
+  <Card title="丰富的知识应用" icon="brain" horizontal="horizontal" iconType="duotone">
+    按照DIKW知识金字塔理论，人们创建知识库的目的是为了使用，Linkly AI 将会包含多种知识应用，帮助你更好的收集、整理、使用知识。
+
+    比如我们有机的融合了传统的阅读器、剪藏、以及联网能力，帮助用户更加方便、自动化的完成数据收集。
+
+  </Card>
+  <Card title="一流的用户体验" icon="star" horizontal="horizontal" iconType="duotone">
+    好的产品体验能带给使用者愉悦。我们致力于提供强大的 AI 知识库，同时保持简单和简洁，不让用户学习过多晦涩难懂的技术，让每个人都能上手使用。
+  </Card>
+</CardGroup>
+<Frame>
+<img
+  className=""
+  src="/images/gallery01.webp"
+  alt="暗色主题"
+/>
+</Frame>
