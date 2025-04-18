@@ -14,17 +14,29 @@
       "dark": "#1C2433"
     }
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/favicon.ico",
   "navigation": {
     "languages": [
-        {
-          "language": "zh",
-          "pages": ["zh/introduction", "zh/how-to-use"]
-        },
-        {
-          "language": "en",
-          "pages": ["en/introduction", "en/how-to-use"]
-        }
+      {
+        "language": "en",
+        "pages": ["en/introduction", "en/how-to-use"]
+      },
+      {
+        "language": "fr",
+        "pages": ["fr/introduction", "fr/how-to-use"]
+      },
+      {
+        "language": "es",
+        "pages": ["es/introduction", "es/how-to-use"]
+      },
+      {
+        "language": "ja",
+        "pages": ["ja/introduction", "ja/how-to-use"]
+      },
+      {
+        "language": "zh",
+        "pages": ["zh/introduction", "zh/how-to-use"]
+      }
     ]
   },
   "logo": {
@@ -47,6 +59,12 @@
   "footer": {
     "socials": {
       "github": "https://github.com/LinklyAI/desktop-linkly-ai"
+    }
+  },
+  "integrations": {
+    "posthog": {
+      "apiHost": "https://us.i.posthog.com",
+      "apiKey": "phc_EPUWAudMJflgv4Ow1MEMfntL4GEYVT4RfZj2rDkQdLn"
     }
   }
 }

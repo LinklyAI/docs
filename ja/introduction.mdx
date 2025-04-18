@@ -1,0 +1,146 @@
+---
+title: Linkly AI
+description: "ローカルAIセカンドブレイン — あなたのファイルから即座に回答。"
+---
+
+<img
+  className="block dark:hidden"
+  src="/images/hero-light.webp"
+  alt="ライトテーマ"
+/>
+<img
+  className="hidden dark:block"
+  src="/images/hero-dark.webp"
+  alt="ダークテーマ"
+/>
+
+## Linkly AIとは？
+
+Linkly AIは、ローカルで動作するデスクトップアプリケーションのオープンソースAIナレッジベースです。
+
+Linkly AIを使用すると、以下のことが可能です：
+
+- 個人のコンピュータに保存されている文書とAI会話を制限なく行う
+- 任意のプロバイダーのLLMサービスを使用したり、[Ollama](https://ollama.com/)などのローカルにデプロイされたモデルサービスを利用する
+- あいまいな説明を使用して、ナレッジベース内の文書を見つける
+- [DeepResearch](https://openai.com/index/introducing-deep-research/)ツールを使用して大量の文書を研究し、レポートを作成する
+- 単に別の使いやすいAIチャットボットとして利用する
+
+つまり、これはあなた専用の、無料で、オープンソースで、エレガントで、本当に実用的な人工知能セカンドブレインです。
+
+<Tip>
+  Linkly AIは、[ChatGPT](https://www.anthropic.com/news/projects)や
+  [Claude](https://support.anthropic.com/zh-CN/articles/9517075-%E4%BB%80%E4%B9%88%E6%98%AF%E9%A1%B9%E7%9B%AE)
+  の優れた軽量ナレッジベースアプリケーション「Project」からインスピレーションを得ています。
+  これらの製品を使用したことがある方なら、Linkly AIにとても親しみを感じるでしょう。
+</Tip>
+
+## 誰のために作られたのか？
+
+Linkly AIは、知識管理に苦労しているすべての**知識労働者**、**学生**、**研究者**、**技術者**、および**小規模チーム**のために作られています。
+
+以下のような課題に直面したことはありませんか？
+
+<CardGroup cols={2}>
+  <Card title="情報の氾濫" icon="file-lines" iconType="duotone">
+    PDF、DOCX、ウェブページ、メモなど様々な文書が散在し、探すのが困難で、読む負担が日々増加
+  </Card>
+  <Card
+    title="知識整理の手間と時間"
+    icon="folder-tree"
+    iconType="duotone"
+  >
+    手動での分類、タグ付け、フォルダ作成は、得られる価値よりも時間がかかりすぎる
+  </Card>
+  <Card title="検索効率の低さ" icon="magnifying-glass" iconType="duotone">
+    文書を探すには記憶とファイル名に頼るしかなく、必要な内容は大まかにしか覚えていないファイルのどこかに隠れている
+  </Card>
+  <Card
+    title="知識活用の難しさ、知識の貯め込み"
+    icon="box-archive"
+    iconType="duotone"
+  >
+    苦労して収集・整理したコンテンツが活用されず、大量の「知識在庫」が形成されている
+  </Card>
+</CardGroup>
+
+これらの問題は、AIの登場まで効率的に解決されることはありませんでした。
+
+**AI検索**は知識収集と迅速な閲覧の課題を効果的に解決しました。人々は**AIナレッジベース**が知識の整理と活用の難しさを解決することを期待していましたが、市場の多くのAIナレッジベース製品を使用すると、以下の問題が見つかります：
+
+<AccordionGroup>
+  <Accordion title="不正確な回答と幻覚">
+    ほとんどのAIナレッジベースは単純なRAGを使用して文書断片を検索するだけで、技術的制限、コスト、パフォーマンス制約、モデル選択などにより結果が妥協されています。
+  </Accordion>
+  <Accordion title="モデル選択の制限">
+    コスト制約や大手企業間の競争により、Q&Aに最適なモデルを使用できないことが多く、効果が大幅に低下します。
+  </Accordion>
+  <Accordion title="データプライバシーの懸念">
+    ほとんどのAIナレッジベースはクラウドで実行され、データをサーバーにアップロードする必要があります。セキュリティ問題が発生したり、サービスプロバイダーがデータを悪用したりすると、プライベート情報が漏洩する可能性があります。
+
+    一部の大手企業は、ユーザーデータを露骨にモデルトレーニングに使用しています。
+
+  </Accordion>
+  <Accordion title="容量制限と高コスト">
+    AIアプリケーションの運用コストは非常に高く、ユーザーに転嫁されるか、品質低下につながります。ほとんどのAIナレッジベースは数GBの無料容量しか提供していません。
+    
+    多くのユーザーは自分の計算能力（自分のGPUなど）を持っていても使用できず、モデルプロバイダーを自由に選択することも困難です。
+  </Accordion>
+</AccordionGroup>
+
+## 主な利点
+
+Linkly AI開発チームは、先進的な概念と技術アーキテクチャを採用し、最高の未来志向AIナレッジベースアプリケーションの構築に取り組んでいます。
+
+<CardGroup cols={1}>
+  <Card title="ローカルファースト" icon="laptop" horizontal="horizontal" iconType="duotone">
+    Linkly AIはクライアントであり、完全にユーザーの個人コンピュータ上で動作し、すべてのデータはローカルに保存されます。モデルを自分でデプロイする能力があれば、完全にオフラインで実行することも可能です。
+  </Card>
+  <Card title="オープンソース" icon="github" horizontal="horizontal" iconType="duotone">
+    Linkly AIは初日からオープンソースを採用しており、これは知識の自由とユーザー主権の未来への強い信念に基づいています。コアコードを公開することは、データがローカルマシンでのみ流れることを確認するために各行のロジックを個人的に確認できることを意味します。世界中の開発者も共同でパフォーマンスとセキュリティを改善し、技術を透明で検証可能なものにします。
+
+    このようにしてこそ、AIはより安全で制御可能な方法で誰もを強化することができます。
+
+  </Card>
+  <Card title="データセキュリティ" icon="shield-check" horizontal="horizontal" iconType="duotone">
+    ローカル運用とオープンソース戦略のおかげで、Linkly AIは絶対的なデータセキュリティを提供します。
+  </Card>
+  <Card title="優れた精度" icon="bullseye" horizontal="horizontal" iconType="duotone">
+    Linkly AIはナレッジベース領域に特化し、最先端のRAG、Agentic、GraphRAG、メモリ技術を実装しています。モデル推論コストの制約がないため、最適なQ&A結果を確保するために最高の技術組み合わせを使用できます。
+  </Card>
+  <Card title="豊富な知識アプリケーション" icon="brain" horizontal="horizontal" iconType="duotone">
+    DIKW知識ピラミッド理論によると、人々はナレッジベースを使用するために作成します。Linkly AIには、知識をより良く収集、整理、使用するのに役立つ複数の知識アプリケーションが含まれています。
+
+    従来のリーダー、ウェブクリッピング、インターネット接続を有機的に統合し、ユーザーがより便利かつ自動的にデータ収集を完了できるよう支援しています。
+
+  </Card>
+  <Card title="一流のユーザー体験" icon="star" horizontal="horizontal" iconType="duotone">
+    良い製品体験はユーザーに喜びをもたらします。私たちは、強力なAIナレッジベースを提供しながら、シンプルさとエレガンスを維持し、ユーザーが過度に難解な技術を学ぶ必要がなく、誰もが使いやすいようにすることに取り組んでいます。
+  </Card>
+</CardGroup>
+<Frame>
+<img
+  className=""
+  src="/images/gallery01.webp"
+  alt="ダークテーマ"
+/>
+</Frame>
+
+---
+
+次に、あなたができること：
+
+<CardGroup cols={2}>
+  <Card
+    title="使い方"
+    icon="plane"
+    iconType="duotone"
+    horizontal="horizontal"
+  ></Card>
+  <Card
+    title="ウェイトリストに参加"
+    icon="hourglass-start"
+    iconType="duotone"
+    horizontal="horizontal"
+  ></Card>
+</CardGroup>
