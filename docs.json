@@ -14,7 +14,10 @@
       "dark": "#1C2433"
     }
   },
-  "favicon": "/favicon.ico",
+  "favicon": {
+    "light": "/favicon.png",
+    "dark": "/favicon.png"
+  },
   "navigation": {
     "languages": [
       {
